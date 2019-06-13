@@ -2,7 +2,10 @@ import big from '../assets/big.jpg';
 import small from '../assets/small.jpg';
 import '../styles/image_viewer.css';
 
-const image = document.createElement('img');
-image.src = 'https://picsum.photos/id/1037/400/400';
+const smallImg = document.createElement('img');
+smallImg.src = small;
+document.body.append(smallImg);
 
-document.body.append(image);
+const bigImg = document.createElement('img');
+bigImg.src = big;
+document.body.append(bigImg);
