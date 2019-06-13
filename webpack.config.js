@@ -21,6 +21,16 @@ const config = {
           'css-loader'
         ],
         test: /\.css$/
+      },
+      {
+        use: [
+          {
+            loader: 'url-loader',
+            options: { limit: 40000 }
+          },
+          'image-webpack-loader'
+        ],
+        test: /\.(jpe?g|png|gif|svg)$/
       }
     ]
   },
